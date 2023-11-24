@@ -3,7 +3,9 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import { Bio } from '../../data/constants';
+
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -85,30 +87,32 @@ const Copyright = styled.p`
 `;
 
 function Footer() {
-  return (
-    <FooterContainer>
-      <FooterWrapper>
-        <Logo>Rishav Chanda</Logo>
-        <Nav>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#experience">Experience</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#education">Education</NavLink>
-        </Nav>
-        <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.facebook} target="display"><FacebookIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.twitter} target="display"><TwitterIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
-        </SocialMediaIcons>
-        <Copyright>
-          &copy; 2023 Rishav Chanda. All rights reserved.
-        </Copyright>
+    return (
+        <FooterContainer>
+            <FooterWrapper>
+                <Logo>Rajan Kumar</Logo>
+                <Nav>
+                    <NavLink href="#about">About</NavLink>
+                    <NavLink href="#skills">Skills</NavLink>
+                    <NavLink href="#experience">Experience</NavLink>
+                    <NavLink href="#projects">Projects</NavLink>
+                    <NavLink href="#education">Education</NavLink>
+                </Nav>
+                <SocialMediaIcons>
+                    <SocialMediaIcon href={Bio.facebook} target="_blank"><FacebookIcon /></SocialMediaIcon>
+                    <SocialMediaIcon href={Bio.twitter} target="_blank"><TwitterIcon /></SocialMediaIcon>
+                    <SocialMediaIcon href={Bio.linkedin} target="_blank"><LinkedInIcon /></SocialMediaIcon>
+                    <SocialMediaIcon href={Bio.insta} target="_blank"><InstagramIcon /></SocialMediaIcon>
+                    <SocialMediaIcon href={`mailto:${Bio.mail}`} target="_blank"><MailOutlineIcon /></SocialMediaIcon>
+                </SocialMediaIcons>
 
-      </FooterWrapper>
-    </FooterContainer>
-  );
+                <Copyright>
+                    &copy; 2023 Rajan Kumar. All rights reserved.
+                </Copyright>
+
+            </FooterWrapper>
+        </FooterContainer>
+    );
 }
 
 export default Footer;

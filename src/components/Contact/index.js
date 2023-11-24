@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { Snackbar } from '@mui/material';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 const Container = styled.div`
 display: flex;
@@ -23,7 +24,7 @@ justify-content: space-between;
 align-items: center;
 flex-direction: column;
 width: 100%;
-max-width: 1350px;
+max-width: 12050px;
 padding: 0px 0px 80px 0px;
 gap: 12px;
 @media (max-width: 960px) {
@@ -57,7 +58,7 @@ const Desc = styled.div`
 
 const ContactForm = styled.form`
   width: 95%;
-  max-width: 600px;
+  max-width: 1100px;
   display: flex;
   flex-direction: column;
   background-color: ${({ theme }) => theme.card};
@@ -118,52 +119,71 @@ const ContactButton = styled.input`
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
-`
+`;
 
 
+const SocialMediaIcon = styled.a`
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  color: ${({ theme }) => theme.text_primary};
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
+`;
 
 const Contact = () => {
 
-  //hooks
-  const [open, setOpen] = React.useState(false);
-  const form = useRef();
+    //hooks
+    const [open, setOpen] = React.useState(false);
+    const form = useRef();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    emailjs.sendForm('service_tox7kqs', 'template_nv7k7mj', form.current, 'SybVGsYS52j2TfLbi')
-      .then((result) => {
-        setOpen(true);
-        form.current.reset();
-      }, (error) => {
-        console.log(error.text);
-      });
-  }
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('service_tox7kqs', 'template_nv7k7mj', form.current, 'SybVGsYS52j2TfLbi')
+            .then((result) => {
+                setOpen(true);
+                form.current.reset();
+            }, (error) => {
+                console.log(error.text);
+            });
+    }
 
 
 
-  return (
-    <Container>
-      <Wrapper>
-        <Title>Contact</Title>
-        <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
-        <ContactForm ref={form} onSubmit={handleSubmit}>
-          <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
+
+    return (
+        <Container>
+            <Wrapper>
+                <Title>Contact</Title>
+                <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
+                <ContactForm ref={form} onSubmit={handleSubmit}>
+                    <ContactTitle >
+                        Email : rajankumar201871@gmail.com
+                        <SocialMediaIcon href={`mailto:"rajankumar201871@gmail.com"`} target="_blank"><MailOutlineIcon /></SocialMediaIcon>
+                    </ContactTitle>
+                    <ContactTitle>Phone No: 9162027181 </ContactTitle>
+                    <ContactTitle>
+                        Address:<br />
+                        A-723, A-Block <br /> Kalam Boys Hostel <br /> Indian Institute of Technology Patna(IIT Patna) <br /> Bihta, Bihar<br /> Pin code: 801103
+                    </ContactTitle>
+                    {/* <ContactInput placeholder="Your Email" name="from_email" />
           <ContactInput placeholder="Your Name" name="from_name" />
           <ContactInput placeholder="Subject" name="subject" />
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
-          <ContactButton type="submit" value="Send" />
-        </ContactForm>
-        <Snackbar
+          <ContactButton type="submit" value="Send" /> */}
+                </ContactForm>
+                {/* <Snackbar
           open={open}
           autoHideDuration={6000}
           onClose={()=>setOpen(false)}
           message="Email sent successfully!"
           severity="success"
-        />
-      </Wrapper>
-    </Container>
-  )
+        /> */}
+            </Wrapper>
+        </Container>
+    )
 }
 
 export default Contact

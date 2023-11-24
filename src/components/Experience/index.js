@@ -17,7 +17,7 @@ const Container = styled.div`
     position: relative;
     z-index: 1;
     align-items: center;
-    padding: 40px 0px 80px 0px;
+    padding: 4px 0px 8px 0px;
     @media (max-width: 960px) {
         padding: 0px;
     }
@@ -32,7 +32,7 @@ const Wrapper = styled.div`
     width: 100%;
     max-width: 1350px;
     padding: 80px 0;
-    gap: 12px;
+    gap: 0px;
     @media (max-width: 960px) {
         flex-direction: column;
     }
@@ -42,7 +42,7 @@ const Title = styled.div`
 font-size: 42px;
 text-align: center;
 font-weight: 600;
-margin-top: 20px;
+margin-top: 0px;
   color: ${({ theme }) => theme.text_primary};
   @media (max-width: 768px) {
       margin-top: 12px;
@@ -56,7 +56,7 @@ const Desc = styled.div`
     max-width: 600px;
     color: ${({ theme }) => theme.text_secondary};
     @media (max-width: 768px) {
-        margin-top: 12px;
+        margin-top: 0px;
         font-size: 16px;
     }
 `;
@@ -64,7 +64,7 @@ const Desc = styled.div`
 const TimelineSection = styled.div`
     width: 100%;
     max-width: 1000px;
-    margin-top: 10px;
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;

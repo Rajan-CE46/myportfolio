@@ -18,7 +18,7 @@ justify-content: space-between;
 align-items: center;
 flex-direction: column;
 width: 100%;
-max-width: 1100px;
+max-width: 1400px;
 gap: 12px;
 @media (max-width: 960px) {
     flex-direction: column;

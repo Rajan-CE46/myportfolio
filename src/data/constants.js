@@ -10,7 +10,7 @@ export const Bio = {
         "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
     github: "https://github.com/Rajan-CE46",
     resume:
-        "https://drive.google.com/file/d/1qIOh-QVcA-s4h9B55vB5ho84gtWAQ693/view?usp=sharing",
+        "https://drive.google.com/file/d/1olZ0tkaTPFdi7AdNK0x-5y_n-nyPyx5k/view?usp=sharing",
     mail:"rajankumar201871@gmail.com",
     linkedin: "www.linkedin.com/in/rajan-kumar-174215244",
     twitter: "https://twitter.com/",

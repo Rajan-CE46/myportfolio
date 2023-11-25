@@ -1,3 +1,5 @@
+import octantAnalysis from './octantAnalysis.jpg'
+import dijkstra from './dijkstralgo.png'
 export const Bio = {
     name: "Rajan Kumar",
     roles: [
@@ -177,8 +179,7 @@ export const projects = [
         date: "Jun 2022 - Sep 2022",
         description:
             "Made a tool for tracing the path of a particle moving in 3-D.",
-        image:
-            "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+            image: octantAnalysis,
         tags: [
             "Python",
             "Pandas",
@@ -187,7 +188,8 @@ export const projects = [
             "Numpy"
         ],
         category: "web app",
-        github: "https://github.com/Rajan-CE46/2001CE46_2022/tree/61152ca51f886a5bfb0729322394ff9dc8132dd5/proj2",
+        webapp: "https://octantanalysisin3d.onrender.com/",
+        github: "https://github.com/Rajan-CE46/Octant-analysis-of-a-particle-moving-in-3D.git",
     },
     {
         id: 2,
@@ -195,8 +197,7 @@ export const projects = [
         date: "Apr 2023 - May 2023",
         description:
             "Made a pathfinding visualizer which will animate the path followed by dijkstra algorithm to get to the destination from a souce in shortest length, we can also add some blockage in between.",
-        image:
-            "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
+        image: dijkstra,
         tags: ["React Js", "HTML", "CSS", "Data Structure and Algorithm"],
         category: "web app",
 

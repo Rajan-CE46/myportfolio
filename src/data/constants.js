@@ -175,11 +175,11 @@ export const education = [
 export const projects = [
     {
         id: 1,
-        title: "Octant analysis of Particle Moving in 3D",
+        title: " Streamlit based Web Application for Octant Analysis",
         date: "Jun 2022 - Sep 2022",
         description:
-            "Made a tool for tracing the path of a particle moving in 3-D.",
-            image: octantAnalysis,
+            "Developed a Streamlit-based web app that Streamlines particle trajectory analysis in 3D space. The app preprocesses time- series data, Users upload data, specify mod values, and visualize results in real - time.Implemented algorithms for data preprocessing, normalization, octant identification and various insights like transtitions longest durations using Pandas, NumPy, and Openpyxl libraries",
+        image: octantAnalysis,
         tags: [
             "Python",
             "Pandas",
@@ -188,8 +188,9 @@ export const projects = [
             "Numpy"
         ],
         category: "web app",
-        webapp: "https://octantanalysisin3d.onrender.com/",
-        github: "https://github.com/Rajan-CE46/Octant-analysis-of-a-particle-moving-in-3D.git",
+        webapp: "https://octant-analysis-rajan-cf46.streamlit.app/",
+        github: "https://github.com/Rajan-CE46/OCTANT_ANALYSIS"
+       
     },
     {
         id: 2,
@@ -202,6 +203,33 @@ export const projects = [
         category: "web app",
 
         webapp: "https://rajan-ce46.github.io/DijkstraPathFindingVisualizer/",
+
+    },
+    {
+        id: 3,
+        title: "DebtMiner: Minimizing Cash Flow among Friends",
+        date: "Nov ’23- Jan ’24",
+        description:
+            "Developed a web application using HTML, CSS, JavaScript, and React.js to minimize cash flow among a group of friends who have borrowed money from each other. Implemented a graph algorithm to analyze the borrowing relationships and efficiently calculate the minimum cash flow required to settle all debts.used Min heap algorithm to optimize time complexity",
+        image: dijkstra,
+        tags: ["React Js", "HTML", "CSS", "Data Structure and Algorithm","Min-Heap Algorithm"],
+        category: "web app",
+
+        webapp: "https://rajan-cf46-minicashflow.netlify.app/",
+
+    },
+
+    {
+        id: 4,
+        title: " CurrenSee: Real-Time Currency Converter",
+        date: "Nov ’23- Dec ’23",
+        description:
+            "Developed a real-time currency converter utilizing HTML, CSS, and JavaScript, integrating external APIs for live exchange rates.",
+        image: dijkstra,
+        tags: ["React Js", "HTML", "CSS", ],
+        category: "web app",
+
+        webapp: "https://rajan-cf46-currecny-converter.netlify.app/",
 
     },
 

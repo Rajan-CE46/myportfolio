@@ -1,5 +1,7 @@
 import octantAnalysis from './octantAnalysis.jpg'
 import dijkstra from './dijkstralgo.png'
+import debtMiner from './debtMiner.jpg'
+import currecyCoverter from './currencyConverter.png'
 export const Bio = {
     name: "Rajan Kumar",
     roles: [
@@ -211,7 +213,7 @@ export const projects = [
         date: "Nov ’23- Jan ’24",
         description:
             "Developed a web application using HTML, CSS, JavaScript, and React.js to minimize cash flow among a group of friends who have borrowed money from each other. Implemented a graph algorithm to analyze the borrowing relationships and efficiently calculate the minimum cash flow required to settle all debts.used Min heap algorithm to optimize time complexity",
-        image: dijkstra,
+        image: debtMiner,
         tags: ["React Js", "HTML", "CSS", "Data Structure and Algorithm","Min-Heap Algorithm"],
         category: "web app",
 
@@ -225,7 +227,7 @@ export const projects = [
         date: "Nov ’23- Dec ’23",
         description:
             "Developed a real-time currency converter utilizing HTML, CSS, and JavaScript, integrating external APIs for live exchange rates.",
-        image: dijkstra,
+        image: currecyCoverter,
         tags: ["React Js", "HTML", "CSS", ],
         category: "web app",
 

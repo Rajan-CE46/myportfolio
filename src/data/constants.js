@@ -25,7 +25,7 @@ export const skills = [
         title: "Programming Skills:",
         skills: [
             {
-                name: "Data Structure and Algorithm",
+                name: "Data Structure and Algorithms",
                 image:
                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLueaRJsD38b32MAw93xzUa7Pftq_l8BUDOw&usqp=CAU",
             },

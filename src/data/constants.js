@@ -12,7 +12,7 @@ export const Bio = {
         "I am a motivated and versatile individual with a passion for learning, dedicated to delivering high-quality results. My positive attitude and growth mindset drive me to take on new challenges. Additionally, I have a strong foundation in data structures and algorithms, having successfully solved over 600 related questions on various platforms. This experience has honed my problem-solving skills, allowing me to approach challenges efficiently and strategically. I am ready to make a meaningful contribution and achieve great things in any project or initiative.",
     github: "https://github.com/Rajan-CE46",
     resume:
-        "https://drive.google.com/file/d/1olZ0tkaTPFdi7AdNK0x-5y_n-nyPyx5k/view?usp=sharing",
+        "https://drive.google.com/file/d/1s8TGd2aSF-mTzDkvvVzR4LnPTwUwgOZG/view?usp=sharing",
     mail:"rajankumar201871@gmail.com",
     linkedin: "www.linkedin.com/in/rajan-kumar-174215244",
     twitter: "https://twitter.com/",
